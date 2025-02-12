@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class TemperatureConverter{
+    public double toCelsius(double fahrenheit) {
+        
+        return (fahrenheit - 32) * 5/9;
+    }
+    public double toFahrenheit(double celsius) {
+        return (celsius * 9/5) + 32;
+    }
+
+    }
+    public static void main(String [] args){
+        Scanner scnr = new Scanne(System.in);
+        TemperatureCoverter tc = new TemperatureConverter();
+
+        System.out.print(s:"Enter a temperature in Fahreheit: ");
+        double fahrenheit = scnr.nextDouble();
+        double celsius = tc.toCelsius(fahrenheit);
+
+        System.out.printf(fahrenheit + "F" " is equal to " + "%.1fC/n", celsius);
+
+    }
